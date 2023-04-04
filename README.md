@@ -9,9 +9,26 @@ composer install
 ```
 cp env.example .env
 ```
-3. Jalankan oerintah pada CMD
+3. Jalankan perintah pada CMD
 ```
 php artisan key:generate
+```
+4. Setting database di foler .env sesuai dengan settingan databasemu
+```php
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=cms
+DB_USERNAME=root
+DB_PASSWORD=
+```
+5. Jalankan perintah pada CMD
+```
+php artisan migrate
+```
+6. Jalankan perintah pada CMD
+```
+php artisan serve
 ```
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
