@@ -1,7 +1,6 @@
 ## Content Management System (CMS)
 
 ## Cara Menjalakan Aplikasi Web
-1. Jalankan Perintah pada CMD
 ...
 composer install
 ...
