@@ -1,5 +1,10 @@
 ## Content Management System (CMS)
-
+* Nama   : Rizal Eka Budi Pratama
+* Kampus : Politeknik Negeri Banyuwangi
+## Stack Yang Digunakan
+1. Template adminLTE dan Bootsrap 5
+2. PHP native
+3. HTML, CSS dan JavaScript
 ## Cara Menjalakan Aplikasi Web
 1. Jalankan Perintah pada CMD
 ```
@@ -14,7 +19,7 @@ cp env.example .env
 ```
 php artisan key:generate
 ```
-perintah ini digunakan mengenerate random string yang digunakan sebagai key yang diperlukan untuk semua proses enkripsi dan dekripsi pada aplikasi kita
+Perintah ini digunakan mengenerate random string yang digunakan sebagai key yang diperlukan untuk semua proses enkripsi dan dekripsi pada aplikasi kita.
 4. Setting database di foler .env sesuai dengan settingan database yang anda buat
 ```php
 DB_CONNECTION=mysql
@@ -28,7 +33,7 @@ DB_PASSWORD=
 ```
 php artisan migrate
 ```
-Perintah ini digunakan untuk membuat tabel-tabel di database
+Perintah ini digunakan untuk membuat tabel-tabel di database.
 6. Jalankan perintah pada CMD
 ```
 php artisan serve
