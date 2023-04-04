@@ -5,6 +5,7 @@
 ```
 composer install
 ```
+Perintah ini digunakan untuk menginstall package-package yang digunakan. 
 2. Copy folder env.example kemudian rename dengan nama .env menggunakan perintah
 ```
 cp env.example .env
@@ -13,7 +14,8 @@ cp env.example .env
 ```
 php artisan key:generate
 ```
-4. Setting database di foler .env sesuai dengan settingan databasemu
+perintah ini digunakan mengenerate random string yang digunakan sebagai key yang diperlukan untuk semua proses enkripsi dan dekripsi pada aplikasi kita
+4. Setting database di foler .env sesuai dengan settingan database yang anda buat
 ```php
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -26,10 +28,13 @@ DB_PASSWORD=
 ```
 php artisan migrate
 ```
+Perintah ini digunakan untuk membuat tabel-tabel di database
 6. Jalankan perintah pada CMD
 ```
 php artisan serve
 ```
+Perintah ini digunakan untuk menjalankan aplikasi.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
