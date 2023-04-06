@@ -16,7 +16,7 @@
                                         src="{{ asset('assets/dist/img/user.png') }}" alt="User profile picture">
                                 @else
                                     <img class="profile-user-img img-fluid img-circle"
-                                        src="{{ asset('storage/' .Auth::user()->photo) }}" alt="User profile picture">
+                                        src="{{ asset('storage/' . Auth::user()->photo) }}" alt="User profile picture">
                                 @endif
                             </div>
 
@@ -39,8 +39,6 @@
                         <div class="card-header p-1">
                             <ul class="nav nav-pills">
                                 <li class="nav-item"><a class="nav-link active" href="#data" data-toggle="tab">Data</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="#profile" data-toggle="tab">Profile</a>
                                 </li>
                             </ul>
                         </div><!-- /.card-header -->
@@ -81,69 +79,6 @@
                                         </div>
                                         <!-- ./col -->
                                     </div>
-                                </div>
-                                <div class="tab-pane" id="profile">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <h5>Nama &nbsp;</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>:</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>{{ Auth::user()->name }}</h5>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h5>Alamat &nbsp;</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>:</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>{{ Auth::user()->name }}</h5>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h5>Tanggal Lahir &nbsp;</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>:</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>{{ Auth::user()->name }}</h5>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h5>No. Telepon/HP &nbsp;</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>:</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>{{ Auth::user()->name }}</h5>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h5>Jenis Kelamin &nbsp;</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>:</h5>
-                                                </td>
-                                                <td>
-                                                    <h5>{{ Auth::user()->name }}</h5>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <a href="{{ route('profile.edit') }}" type="button" class="btn btn-primary"><i
-                                            class="fa-solid fa-user-pen mr-2"></i>Edit Profile</a>
                                 </div>
                                 <!-- /.tab-pane -->
                             </div>
